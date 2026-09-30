@@ -10,19 +10,19 @@ Configuré el adaptador de red en modo **NAT**. Con NAT, la VM sale a internet a
 
 ## 2. Capa Windows/Linux: Usuarios y Actualizaciones
 
-![Usuario estándar](Usuario%20estándar.png)
-![Usuario estándar - Welcome](Usuario%20estándar%20-%20Welcome.png)
+![Usuario estándar](Usuario%20estándar.webp)
+![Usuario estándar - Welcome](Usuario%20estándar%20-%20Welcome.webp)
 
 Creé un usuario (`vboxuser`) sin privilegios de administrador para usar en las prácticas, en vez de trabajar como root/admin todo el tiempo. Esto reduce el riesgo de que un error o una herramienta maliciosa dañe el sistema completo.
 
 ## 3. Capa Linux: Permisos y Gestión
 
-![Permisos y actualizaciones](Permisos%20y%20actualizaciones.png)
+![Permisos y actualizaciones](Permisos%20y%20actualizaciones.webp)
 
 Usé `ls -l` para ver los permisos del archivo creado, y `sudo apt update` para buscar actualizaciones de paquetes disponibles. Mantener el sistema actualizado cierra vulnerabilidades conocidas.
 
 ## 4. La Red de Seguridad: Snapshot Inicial
 
-![Snapshot](Snapshot.png)
+![Snapshot](Snapshot.webp)
 
 Creé un snapshot llamado **"Clean Install - Hardening applied"** una vez aplicadas las configuraciones básicas de seguridad. Esto permite volver a este estado limpio si algo sale mal más adelante.
